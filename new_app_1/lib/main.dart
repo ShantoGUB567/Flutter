@@ -57,6 +57,8 @@ class HomeActivity extends StatelessWidget{
         Container(
           height: 100,
           color: Colors.lightBlueAccent,
+          margin: EdgeInsets.all(20),
+          padding: EdgeInsets.all(10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -86,7 +88,7 @@ class HomeActivity extends StatelessWidget{
                   Text("Share")
                 ],
               ),
-              
+
             ],
           ),
 
@@ -101,6 +103,27 @@ class HomeActivity extends StatelessWidget{
         backgroundColor: Colors.greenAccent,
         onPressed: (){
           MySnackBar("This is Floating Action Button", context);
+        },
+      ),
+
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,  // 0=home, 1=contact, 2=profile
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.contact_emergency), label: "Contact"),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+        ],
+        onTap: (int index){
+          if(index==0){
+            MySnackBar("Home Tab", context);
+          }
+          if(index==1){
+            MySnackBar("Contact Tab", context);
+          }
+          if(index==2){
+            MySnackBar("Profile Tab", context);
+          }
+
         },
       ),
 
