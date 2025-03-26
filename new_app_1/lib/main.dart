@@ -54,48 +54,59 @@ class HomeActivity extends StatelessWidget{
       ),
 
       body: (
-        Container(
-          height: 100,
-          color: Colors.lightBlueAccent,
-          margin: EdgeInsets.all(20),
-          padding: EdgeInsets.all(10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Icon(Icons.call, size: 50,),
-                  Text("Call")
-                ],
-              ),
-
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Icon(Icons.route, size: 50,),
-                  Text("Route")
-                ],
-              ),
-
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Icon(Icons.share, size: 50,),
-                  Text("Share")
-                ],
-              ),
-
-            ],
-          ),
-
+      Container(
+        color: Colors.amberAccent,
+        child: Container(
+          margin: EdgeInsets.all(10),
+          color: Colors.purpleAccent,
+          
         )
+
+      )
+
+
+    //       Container(
+    //       height: 100,
+    //       color: Colors.lightBlueAccent,
+    //       margin: EdgeInsets.all(20),
+    //   padding: EdgeInsets.all(10),
+    //   child: Row(
+    //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    //     children: [
+    //       Column(
+    //         mainAxisAlignment: MainAxisAlignment.center,
+    //         crossAxisAlignment: CrossAxisAlignment.center,
+    //         children: [
+    //           Icon(Icons.call, size: 50,),
+    //           Text("Call")
+    //         ],
+    //       ),
+    //
+    //       Column(
+    //         mainAxisAlignment: MainAxisAlignment.center,
+    //         crossAxisAlignment: CrossAxisAlignment.center,
+    //         children: [
+    //           Icon(Icons.route, size: 50,),
+    //           Text("Route")
+    //         ],
+    //       ),
+    //
+    //       Column(
+    //         mainAxisAlignment: MainAxisAlignment.center,
+    //         crossAxisAlignment: CrossAxisAlignment.center,
+    //         children: [
+    //           Icon(Icons.share, size: 50,),
+    //           Text("Share")
+    //         ],
+    //       ),
+    //
+    //     ],
+    //   ),
+    //
+    // ),
+
+
       ),
-
-
 
       floatingActionButton: FloatingActionButton(
         elevation: 0,
@@ -126,6 +137,27 @@ class HomeActivity extends StatelessWidget{
 
         },
       ),
+
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(
+                child: UserAccountsDrawerHeader(
+                  decoration: BoxDecoration(color: Colors.black54),
+                  accountName: Text("Al Shahrair Ahommed Shanto"),
+                  accountEmail: Text("shahriarshanto@gmail.com"),
+                  // currentAccountPicture: Image(image: Image.asset('assets/221002567.jpg')),
+                ),
+            ),
+            ListTile(leading: Icon(Icons.home) ,title: Text("Home"), onTap: (){MySnackBar("Home Drawer", context);},),
+            ListTile(leading: Icon(Icons.dashboard) ,title: Text("Dash Board"), onTap: (){MySnackBar("Dash Board Drawer", context);},),
+            ListTile(leading: Icon(Icons.more) ,title: Text("About"), onTap: (){MySnackBar("About Drawer", context);},),
+          ],
+        ),
+      ),
+
+      endDrawer: Drawer(),
+
 
     );
   }
