@@ -24,13 +24,18 @@ return MaterialApp(
 }
 
 class HomeActivity extends StatelessWidget{
-  const HomeActivity({super.key});
+   HomeActivity({super.key});
   
   MySnackBar(massage, context){
     return ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(massage))
     );
   }
+
+   ButtonStyle buttonStyle=ElevatedButton.styleFrom(
+    padding: EdgeInsets.all(30),
+    backgroundColor: Colors.blue
+  ); //kaj kortece na
 
   @override
   Widget build(BuildContext context) {
@@ -55,27 +60,109 @@ class HomeActivity extends StatelessWidget{
 
     
     body: Container(
-      height: 200,
-      child: Row(
+      // height: 200,
+      child: Column(
         children: [
-          Expanded(
-            flex: 4,
-              child: Container(
-              color: Colors.yellow,
-              alignment: Alignment.center,
-              child: Text("Text-1"))),
-          Expanded(
-              flex: 2,
-              child: Container(
-              color: Colors.green,
-              alignment: Alignment.center,
-              child: Text("Text-1"))),
-          Expanded(
-              flex: 2,
-              child: Container(
-              color: Colors.red,
-              alignment: Alignment.center,
-              child: Text("Text-1"))),
+          Row(
+            children: [
+              Container(
+                height: 210,
+                color: Colors.grey,
+                margin: EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Row(children: [Text("Internet")],),
+                        Row(children: [Text("Minute")],),
+                        Row(children: [Text("SMS")],),
+                      ],
+                    ),
+                    Column(
+
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
+
+          Row(),
+          Row(),
+          Row(
+            children: [
+              Expanded(
+                flex: 4,
+                  child: Container(
+                    height: 100,
+                  color: Colors.yellow,
+                  alignment: Alignment.center,
+                  child: Text("Text-1"))),
+              Expanded(
+                  flex: 2,
+                  child: Container(
+                      height: 100,
+                  color: Colors.green,
+                  alignment: Alignment.center,
+                  child: Text("Text-1"))),
+              Expanded(
+                  flex: 2,
+                  child: Container(
+                      height: 100,
+                  color: Colors.red,
+                  alignment: Alignment.center,
+                  child: Text("Text-1"))),
+
+            ],
+          ),
+          
+          Row(
+            children: [
+              TextButton(onPressed: (){MySnackBar("This is Text Button", context);}, child: Text("Text Button")),
+              OutlinedButton(onPressed: (){MySnackBar("This is Outline Button", context);}, child: Text("Outline Button")),
+              ElevatedButton(onPressed: (){MySnackBar("This is Elevated Button", context);}, child: Text("Elevated Button")),
+            ],
+          ),
+
+          Row(
+            children: [
+              Expanded(
+                flex: 1,
+                child: Container(
+                  height: 100,
+                  color: Colors.lightGreenAccent,
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  height: 100,
+                  color: Colors.lightBlueAccent,
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  height: 100,
+                  color: Colors.amberAccent,
+                ),
+              ),
+
+            ],
+          ),
+
+          Row(children: [Container(
+            alignment: Alignment.center,
+            child: Stack(
+              alignment: Alignment.center ,
+              children: [
+                Container(height: 160, width: 160, color: Colors.pink,),
+                Container(height: 140, width: 140, margin: EdgeInsets.all(10), color: Colors.teal,),
+              ],
+            ),
+          )],),
 
         ],
       ),
