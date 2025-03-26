@@ -53,60 +53,132 @@ class HomeActivity extends StatelessWidget{
         ],
       ),
 
-      body: (
-      Container(
-        color: Colors.amberAccent,
-        child: Container(
-          margin: EdgeInsets.all(10),
-          color: Colors.purpleAccent,
-          
-        )
+    
+    body: Container(
+      height: 200,
+      child: Row(
+        children: [
+          Expanded(
+            flex: 4,
+              child: Container(
+              color: Colors.yellow,
+              alignment: Alignment.center,
+              child: Text("Text-1"))),
+          Expanded(
+              flex: 2,
+              child: Container(
+              color: Colors.green,
+              alignment: Alignment.center,
+              child: Text("Text-1"))),
+          Expanded(
+              flex: 2,
+              child: Container(
+              color: Colors.red,
+              alignment: Alignment.center,
+              child: Text("Text-1"))),
 
-      )
-
-
-    //       Container(
-    //       height: 100,
-    //       color: Colors.lightBlueAccent,
-    //       margin: EdgeInsets.all(20),
-    //   padding: EdgeInsets.all(10),
-    //   child: Row(
-    //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    //     children: [
-    //       Column(
-    //         mainAxisAlignment: MainAxisAlignment.center,
-    //         crossAxisAlignment: CrossAxisAlignment.center,
-    //         children: [
-    //           Icon(Icons.call, size: 50,),
-    //           Text("Call")
-    //         ],
-    //       ),
-    //
-    //       Column(
-    //         mainAxisAlignment: MainAxisAlignment.center,
-    //         crossAxisAlignment: CrossAxisAlignment.center,
-    //         children: [
-    //           Icon(Icons.route, size: 50,),
-    //           Text("Route")
-    //         ],
-    //       ),
-    //
-    //       Column(
-    //         mainAxisAlignment: MainAxisAlignment.center,
-    //         crossAxisAlignment: CrossAxisAlignment.center,
-    //         children: [
-    //           Icon(Icons.share, size: 50,),
-    //           Text("Share")
-    //         ],
-    //       ),
-    //
-    //     ],
-    //   ),
-    //
-    // ),
-
-
+        ],
       ),
+    ),
+    
+    
+    
+    
+    //   body: (
+    //   Container(
+    //     color: Colors.amberAccent,
+    //     child: Container(
+    //       margin: EdgeInsets.all(10),
+    //       color: Colors.purpleAccent,
+    //       child: Row(
+    //         children: [
+    //           // Row(
+    //           //
+    //           // ),
+    //           // Row(),
+    //           // Row(),
+    //
+    //           Container(
+    //             color: Colors.green,
+    //             margin: EdgeInsets.all(10),
+    //             child: Row(
+    //               //Row-1
+    //             ),
+    //           ),
+    //
+    //           Container(
+    //             color: Colors.blue,
+    //             margin: EdgeInsets.all(10),
+    //             child: Row(
+    //               //Row-2
+    //             ),
+    //           ),
+    //
+    //           Container(
+    //             color: Colors.red,
+    //             margin: EdgeInsets.all(10),
+    //             child: Row(
+    //               //Row-3
+    //             ),
+    //           ),
+    //
+    //           Container(
+    //             color: Colors.yellow,
+    //             margin: EdgeInsets.all(10),
+    //             child: Row(
+    //               //Row-1
+    //             ),
+    //           ),
+    //
+    //         ],
+    //       ),
+    //     )
+    //
+    //   )
+    //
+    //
+    // //       Container(
+    // //       height: 100,
+    // //       color: Colors.lightBlueAccent,
+    // //       margin: EdgeInsets.all(20),
+    // //   padding: EdgeInsets.all(10),
+    // //   child: Row(
+    // //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    // //     children: [
+    // //       Column(
+    // //         mainAxisAlignment: MainAxisAlignment.center,
+    // //         crossAxisAlignment: CrossAxisAlignment.center,
+    // //         children: [
+    // //           Icon(Icons.call, size: 50,),
+    // //           Text("Call")
+    // //         ],
+    // //       ),
+    // //
+    // //       Column(
+    // //         mainAxisAlignment: MainAxisAlignment.center,
+    // //         crossAxisAlignment: CrossAxisAlignment.center,
+    // //         children: [
+    // //           Icon(Icons.route, size: 50,),
+    // //           Text("Route")
+    // //         ],
+    // //       ),
+    // //
+    // //       Column(
+    // //         mainAxisAlignment: MainAxisAlignment.center,
+    // //         crossAxisAlignment: CrossAxisAlignment.center,
+    // //         children: [
+    // //           Icon(Icons.share, size: 50,),
+    // //           Text("Share")
+    // //         ],
+    // //       ),
+    // //
+    // //     ],
+    // //   ),
+    // //
+    // // ),
+    //
+    //
+    //   ),
 
       floatingActionButton: FloatingActionButton(
         elevation: 0,
