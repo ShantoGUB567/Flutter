@@ -66,7 +66,7 @@ class HomeActivity extends StatelessWidget{
           Row(
             children: [
               Container(
-                height: 210,
+                height: 70,
                 color: Colors.grey,
                 margin: EdgeInsets.all(10),
                 child: Row(
@@ -80,17 +80,34 @@ class HomeActivity extends StatelessWidget{
                         Row(children: [Text("SMS")],),
                       ],
                     ),
-                    Column(
-
-                    ),
+                    Container(
+                      width: 330,
+                      height: 60,
+                      margin: EdgeInsets.all(5),
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 3,)),
+                        child: Expanded(
+                          child: Row(
+                            children: [
+                              Text(
+                                "👋 Hi, I'm Al Shahriar Ahommed Shanto",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  backgroundColor: Colors.black,
+                                  fontWeight: FontWeight.bold ,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                    )
                   ],
                 ),
               )
             ],
           ),
 
-          Row(),
-          Row(),
           Row(
             children: [
               Expanded(
@@ -153,16 +170,61 @@ class HomeActivity extends StatelessWidget{
             ],
           ),
 
-          Row(children: [Container(
-            alignment: Alignment.center,
-            child: Stack(
-              alignment: Alignment.center ,
+          Row(children: [
+            Column(
+            children: [
+              Container(
+                alignment: Alignment.center,
+                child: Stack(
+                  alignment: Alignment.center ,
+                  children: [
+                    Container(height: 160, width: 160, color: Colors.pink,),
+                    Container(height: 140, width: 140, margin: EdgeInsets.all(10), color: Colors.teal,),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          Column(
+            children: [
+              Container(
+                width: 125,
+                height: 160,
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 3,)),
+                child: Column(
+                  children: [
+                    Text("Alhamdulillah for everything. Thank you Allah. aro onek onek likha box e jeno na dhore",
+                      textDirection: TextDirection.rtl,
+                      // textAlign: TextAlign.center,
+                      // overflow: TextOverflow.ellipsis,
+                      textScaleFactor: 0.9,
+                      softWrap: true,
+                      style: TextStyle(color: Colors.pink, ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+            Column(
               children: [
-                Container(height: 160, width: 160, color: Colors.pink,),
-                Container(height: 140, width: 140, margin: EdgeInsets.all(10), color: Colors.teal,),
+                Container(
+                  width: 125,
+                  height: 160,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 3,)),
+                  child: Column(
+                    children: [
+
+                    ],
+                  ),
+                )
               ],
             ),
-          )],),
+          ],),
+
+          Row(),
 
         ],
       ),
