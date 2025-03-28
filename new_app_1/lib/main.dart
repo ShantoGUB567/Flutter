@@ -96,6 +96,8 @@ class HomeActivity extends StatelessWidget{
                                   color: Colors.white,
                                   backgroundColor: Colors.black,
                                   fontWeight: FontWeight.bold ,
+                                  letterSpacing: 1,
+                                  wordSpacing: 1,
                                 ),
                               ),
                             ],
@@ -216,7 +218,15 @@ class HomeActivity extends StatelessWidget{
                   decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 3,)),
                   child: Column(
                     children: [
-
+                      Text(
+                        "Shanto",
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          shadows: [Shadow(color: Colors.greenAccent, blurRadius: 3.0, offset: Offset(2, 2))]
+                        ),
+                      ),
                     ],
                   ),
                 )
@@ -224,7 +234,13 @@ class HomeActivity extends StatelessWidget{
             ),
           ],),
 
-          Row(),
+          Row(children: [Container(
+            height: 225,
+            width: 410,
+            decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 3,)),
+            child: Expanded(
+                child: Text("Tor nanir heda")),
+          )],),
 
         ],
       ),
