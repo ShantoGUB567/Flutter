@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "960824478155",
+    "project_id": "newproject-b2272",
+    "storage_bucket": "newproject-b2272.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960824478155:android:88ca55a10f11e2a5b9ce4e",
+        "android_client_info": {
+          "package_name": "com.shantoapp.newproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1dvkQsJzba1Reza0IUe_wZp89tz-VQv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
