@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:new_app_6/align.dart';
 import 'package:new_app_6/column.dart';
+import 'package:new_app_6/expanded.dart';
+import 'package:new_app_6/flex.dart';
+import 'package:new_app_6/flexible.dart';
 
 import 'container.dart';
 import 'column.dart';
@@ -40,13 +44,44 @@ class HomeActivity extends StatelessWidget {
           ),
           ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => ColumnActivity()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ExpandedActivity()));
               },
               child: Text("Expanded")
           ),
           ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => ColumnActivity()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
+              },
+              child: Text("Flexible")
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => FlexActivity()));
+              },
+              child: Text("Flex")
+          ),ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => AlignActivity()));
+              },
+              child: Text("Align")
+          ),ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
+              },
+              child: Text("Flexible")
+          ),ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
+              },
+              child: Text("Flexible")
+          ),ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
+              },
+              child: Text("Flexible")
+          ),ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
               },
               child: Text("Flexible")
           ),
