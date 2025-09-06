@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:new_app_6/column.dart';
 
 import 'container.dart';
+import 'column.dart';
 
 void main(){
   runApp(const MyApp());
@@ -28,7 +30,14 @@ class HomeActivity extends StatelessWidget {
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => ContainerActivity()));
               },
-              child: Text("Container"))
+              child: Text("Container")
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ColumnActivity()));
+              },
+              child: Text("Column")
+          ),
         ],
       ),
     );
