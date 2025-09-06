@@ -38,6 +38,18 @@ class HomeActivity extends StatelessWidget {
               },
               child: Text("Column")
           ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ColumnActivity()));
+              },
+              child: Text("Expanded")
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ColumnActivity()));
+              },
+              child: Text("Flexible")
+          ),
         ],
       ),
     );
