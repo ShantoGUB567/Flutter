@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_app_6/align.dart';
+import 'package:new_app_6/card.dart';
 import 'package:new_app_6/column.dart';
 import 'package:new_app_6/expanded.dart';
 import 'package:new_app_6/flex.dart';
@@ -72,9 +73,9 @@ class HomeActivity extends StatelessWidget {
               child: Text("Spacer")
           ),ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => CardActivity()));
               },
-              child: Text("Flexible")
+              child: Text("Card")
           ),ElevatedButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
