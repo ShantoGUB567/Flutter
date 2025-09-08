@@ -4,6 +4,7 @@ import 'package:new_app_6/column.dart';
 import 'package:new_app_6/expanded.dart';
 import 'package:new_app_6/flex.dart';
 import 'package:new_app_6/flexible.dart';
+import 'package:new_app_6/spacer.dart';
 
 import 'container.dart';
 import 'column.dart';
@@ -66,9 +67,9 @@ class HomeActivity extends StatelessWidget {
               child: Text("Align")
           ),ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SpacerActivity()));
               },
-              child: Text("Flexible")
+              child: Text("Spacer")
           ),ElevatedButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
