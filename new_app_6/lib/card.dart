@@ -37,7 +37,7 @@ class CardActivity extends StatelessWidget {
           ),
           SizedBox(
             height: 200,
-            width: 200, 
+            width: 200,
             child: Card(
               color: Colors.green[300],
             ),

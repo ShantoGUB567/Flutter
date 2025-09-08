@@ -5,6 +5,7 @@ import 'package:new_app_6/column.dart';
 import 'package:new_app_6/expanded.dart';
 import 'package:new_app_6/flex.dart';
 import 'package:new_app_6/flexible.dart';
+import 'package:new_app_6/singlescrollview.dart';
 import 'package:new_app_6/spacer.dart';
 
 import 'container.dart';
@@ -75,12 +76,12 @@ class HomeActivity extends StatelessWidget {
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => CardActivity()));
               },
-              child: Text("Card")
+              child: Text("Card & Sizebox")
           ),ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ScrollViewActivity()));
               },
-              child: Text("Flexible")
+              child: Text("ScrollView")
           ),ElevatedButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
