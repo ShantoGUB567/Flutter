@@ -8,6 +8,11 @@ class ScrollViewActivity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("SingleChildScrollView & Padding & Placeholder"),),
+      body: Column(
+        children: [
+          
+        ],
+      ),
     );
   }
   
