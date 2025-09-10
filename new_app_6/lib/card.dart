@@ -32,7 +32,10 @@ class CardActivity extends StatelessWidget {
               clipBehavior: Clip.hardEdge,
               borderOnForeground: false,
               // surfaceTintColor: Colors.grey,
-              child: Text("Al Shahriar Ahommed Shanto. aro onek kico likhte hobe jeno box er baire chole jay"),
+              child: Text("Al Shahriar Ahommed Shanto. aro onek kico likhte hobe jeno box er baire chole jay",
+                textAlign: TextAlign.end,
+                maxLines: 2,
+              ),
             ),
           ),
           SizedBox(
