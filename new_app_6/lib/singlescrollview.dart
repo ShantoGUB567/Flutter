@@ -29,7 +29,7 @@ class ScrollViewActivity extends StatelessWidget {
                   ),
                   Text(
                     "onek kico likhte hobe jeno pura box vore jay tai onek kico likhteci. kintu ki likhteci tar age-matha kicoi jani na. janleo buji na. aita hoilo akta pinik",
-                    // textAlign: TextAlign.justify,
+                    textAlign: TextAlign.justify,
                     // maxLines: 2,
                     // overflow: TextOverflow.ellipsis,
                     // softWrap: true,
@@ -62,7 +62,27 @@ class ScrollViewActivity extends StatelessWidget {
                       fontStyle: FontStyle.italic,
                       wordSpacing: 10,
                       decoration: TextDecoration.lineThrough,
-                      
+                      shadows: [Shadow(
+                        color: Colors.black54,
+                        offset: Offset(5,5),
+                        blurRadius: 5
+                      )],
+                      height: 1.5,
+                      decorationColor: Colors.white,
+                      decorationThickness: 3,
+                    ),
+                  ),
+                  Text(
+                    "Shahriar Shanto",
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w800,
+                      foreground: Paint()
+                      ..color = Colors.brown
+                      ..style = PaintingStyle.stroke
+                      ..strokeWidth = 2,
+
                     ),
                   ),
                 ],
