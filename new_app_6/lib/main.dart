@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_app_6/align.dart';
+import 'package:new_app_6/appbar.dart';
 import 'package:new_app_6/card.dart';
 import 'package:new_app_6/column.dart';
 import 'package:new_app_6/expanded.dart';
@@ -84,9 +85,9 @@ class HomeActivity extends StatelessWidget {
               child: Text("ScrollView")
           ),ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => FlexibleActivity()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => App_Bar()));
               },
-              child: Text("Flexible")
+              child: Text("AppBar")
           ),
         ],
       ),
