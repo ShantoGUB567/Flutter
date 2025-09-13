@@ -136,6 +136,11 @@ class App_Bar extends StatelessWidget {
                   height: 200,
                   width: 250,
                 ),
+                Image.asset(
+                  "images/IMG_20250801_145053.jpg",
+                  height: 300,
+                  fit: BoxFit.fitHeight,
+                ),
               ],
             )
           ],
