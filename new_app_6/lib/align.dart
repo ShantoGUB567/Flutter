@@ -36,6 +36,7 @@ class AlignActivity extends StatelessWidget {
             color: Colors.red[100],
             height: 300,
             // alignment: Alignment.bottomRight,
+            //input any comment
             child: Center(
               widthFactor: 1.5,
               heightFactor: 2,
