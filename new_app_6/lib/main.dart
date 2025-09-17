@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:new_app_6/align.dart';
 import 'package:new_app_6/appbar.dart';
 import 'package:new_app_6/card.dart';
+import 'package:new_app_6/clipRect.dart';
 import 'package:new_app_6/column.dart';
 import 'package:new_app_6/expanded.dart';
 import 'package:new_app_6/flex.dart';
 import 'package:new_app_6/flexible.dart';
+import 'package:new_app_6/indexedStack.dart';
 import 'package:new_app_6/listview.dart';
 import 'package:new_app_6/listviewbuilder.dart';
 import 'package:new_app_6/listviewcustom.dart';
@@ -122,9 +124,59 @@ class HomeActivity extends StatelessWidget {
                   child: Text("Stack")
               ),ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => ListViewCustom()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
                   },
-                  child: Text("ListView 3")
+                  child: Text("IndexedStack")
+              ),
+            ],
+          ),
+          Column(
+            children: [
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => ClipRectAct()));
+                  },
+                  child: Text("ClipRect")
+              ),ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
+                  },
+                  child: Text("ClipRRect")
+              ),ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
+                  },
+                  child: Text("ClipOval")
+              ),ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
+                  },
+                  child: Text("ClipPath")
+              ),ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
+                  },
+                  child: Text("IndexedStack")
+              ),ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
+                  },
+                  child: Text("IndexedStack")
+              ),ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
+                  },
+                  child: Text("IndexedStack")
+              ),ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
+                  },
+                  child: Text("IndexedStack")
+              ),ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
+                  },
+                  child: Text("IndexedStack")
               ),
             ],
           ),
