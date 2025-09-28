@@ -19,10 +19,7 @@ class ClipRectAct extends StatelessWidget {
           ),
         ),
       ),
-      drawer: Drawer(
-
-        
-      ),
+      drawer: Drawer(),
       endDrawer: Drawer(),
     );
   }
