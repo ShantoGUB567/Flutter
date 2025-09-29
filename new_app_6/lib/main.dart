@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:new_app_6/align.dart';
 import 'package:new_app_6/appbar.dart';
+import 'package:new_app_6/buttonBar.dart';
 import 'package:new_app_6/card.dart';
 import 'package:new_app_6/clipRect.dart';
 import 'package:new_app_6/column.dart';
@@ -139,9 +140,9 @@ class HomeActivity extends StatelessWidget {
                   child: Text("ClipRect")
               ),ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => ButtonBarAct()));
                   },
-                  child: Text("ClipRRect")
+                  child: Text("ButtonBar")
               ),ElevatedButton(
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
