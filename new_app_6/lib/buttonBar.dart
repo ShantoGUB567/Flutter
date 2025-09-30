@@ -25,7 +25,8 @@ class ButtonBarAct extends StatelessWidget {
                   ),
                   filled: true,
                   labelText: "Enter Name",
-                  labelStyle: TextStyle(color: Colors.indigo)
+                  labelStyle: TextStyle(color: Colors.indigo),
+                  icon: Icon(Icons.person)
                 ),
               ),
               TextField(
@@ -33,19 +34,34 @@ class ButtonBarAct extends StatelessWidget {
                 decoration: InputDecoration(
                   filled: true,
                   labelText: "Enter Student ID",
-                  border: OutlineInputBorder(),
+                  border: UnderlineInputBorder(),
+                  prefixIcon: Icon(Icons.numbers)
                 ),
+                maxLength: 9,
+                maxLengthEnforcement: null,
               ),
               TextField(
                 keyboardType: TextInputType.emailAddress,
-                enabled: false,
+                // enabled: false,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(28)
                   ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red)
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.purple)
+                  ),
                   filled: true,
-                  labelText: "Enter Email"
+                  labelText: "Enter Email", 
+                  suffixIcon: Icon(Icons.email),
+                  suffixText: "@gmail.com",
                 ),
+                cursorColor: Colors.pink,
+                cursorWidth: 10,
+                // showCursor: false,
+
               ),
               TextField(
                 keyboardType: TextInputType.number,
@@ -55,6 +71,28 @@ class ButtonBarAct extends StatelessWidget {
                   hintText: "01XXXXXXXXX",
                   helperText: "Phone Number",
                 ),
+              ),
+              TextField(
+                decoration: InputDecoration(
+                  icon: Icon(Icons.password),
+                  labelText: "Password",
+                  filled: true,
+                ),
+                obscureText: true,
+                obscuringCharacter: "@",
+                toolbarOptions: ToolbarOptions(
+                  copy: true,
+                  selectAll: true,
+                  paste: false,
+                  cut: true,
+                ),
+              ),
+              Divider(
+                height: 50,
+                thickness: 5,
+                color: Colors.brown,
+                indent: 10,
+                endIndent: 10,
               ),
               ButtonBar(
                 children: [
