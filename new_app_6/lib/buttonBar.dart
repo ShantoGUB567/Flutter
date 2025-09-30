@@ -24,7 +24,8 @@ class ButtonBarAct extends StatelessWidget {
                     borderSide: BorderSide.merge(BorderSide(width: 0.2, ), BorderSide(width: 1)),
                   ),
                   filled: true,
-                  labelText: "Enter Name"
+                  labelText: "Enter Name",
+                  labelStyle: TextStyle(color: Colors.indigo)
                 ),
               ),
               TextField(
@@ -32,6 +33,7 @@ class ButtonBarAct extends StatelessWidget {
                 decoration: InputDecoration(
                   filled: true,
                   labelText: "Enter Student ID",
+                  border: OutlineInputBorder(),
                 ),
               ),
               TextField(
@@ -50,6 +52,8 @@ class ButtonBarAct extends StatelessWidget {
                 decoration: InputDecoration(
                   filled: true,
                   labelText: "Whatsapp Number",
+                  hintText: "01XXXXXXXXX",
+                  helperText: "Phone Number",
                 ),
               ),
               ButtonBar(
