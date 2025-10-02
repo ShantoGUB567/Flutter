@@ -11,7 +11,7 @@ class ButtonBarAct extends StatelessWidget {
       body: Center(
         child: Container(
           width: 350,
-          height: 500,
+          height: 600,
           decoration: BoxDecoration(
             border: Border.all(color: Colors.redAccent, width: 5,),
           ),
@@ -70,6 +70,13 @@ class ButtonBarAct extends StatelessWidget {
                   labelText: "Whatsapp Number",
                   hintText: "01XXXXXXXXX",
                   helperText: "Phone Number",
+                ),
+              ),
+              TextField(
+                decoration: InputDecoration(
+                  labelText: "Nickname",
+                  
+                  filled: true,
                 ),
               ),
               TextField(
