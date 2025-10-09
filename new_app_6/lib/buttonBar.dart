@@ -75,7 +75,7 @@ class ButtonBarAct extends StatelessWidget {
               TextField(
                 decoration: InputDecoration(
                   labelText: "Nickname",
-                  
+
                   filled: true,
                 ),
               ),
