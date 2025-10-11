@@ -93,7 +93,17 @@ class LoginActivity extends StatelessWidget {
                     keyboardType: TextInputType.text,
                     obscureText: true,
                     obscuringCharacter: "*",
-
+                  ),
+                  SizedBox(height: 10,),
+                  Text(
+                    "Forgot Password??",
+                    textAlign: TextAlign.end,
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontFamily: "Regular",
+                      color: Color(0xff2D3142),
+                      decoration: TextDecoration.underline
+                    ),
                   ),
                 ],
               ),
