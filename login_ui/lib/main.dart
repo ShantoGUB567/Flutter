@@ -85,6 +85,7 @@ class LoginActivity extends StatelessWidget {
                         filled: true,
                         fillColor: Color(0xffE7E7E7),
                         prefixIcon: Icon(Icons.lock),
+                        suffixIcon: Icon(Icons.visibility_off_outlined),
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide(color: Color(0xffB6B6B6), width: 2)
