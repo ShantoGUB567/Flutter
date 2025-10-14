@@ -61,7 +61,7 @@ class _HomeActivityState extends State<HomeActivity> {
               itemBuilder: (BuildContext context, int index) {
                 return ListTile(
                   title: Text("Shahriar Shanto"),
-                  subtitle: Text("Who are you bro??"),
+                  subtitle: Text("Hi!!  \nWho are you bro??"),
                   leading: CircleAvatar(child: Icon(Icons.person_4, size: 30,),),
                   trailing: Text("03:47 am"),
                 );
