@@ -64,6 +64,9 @@ class _HomeActivityState extends State<HomeActivity> {
                   subtitle: Text("Hi!!  \nWho are you bro??"),
                   leading: CircleAvatar(child: Icon(Icons.person_4, size: 30,),),
                   trailing: Text("03:47 am"),
+
+
+                  
                 );
               }
             ),
