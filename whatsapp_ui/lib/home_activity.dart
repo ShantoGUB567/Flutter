@@ -61,20 +61,37 @@ class _HomeActivityState extends State<HomeActivity> {
               itemBuilder: (BuildContext context, int index) {
                 return ListTile(
                   title: Text("Shahriar Shanto"),
-                  subtitle: Text("Hi!!  \nWho are you bro??"),
+                  subtitle: Text("Hi!!  Who are you bro??"),
                   leading: CircleAvatar(child: Icon(Icons.person_4, size: 30,),),
                   trailing: Text("03:47 am"),
                 );
               }
             ),
-            Text("Status"),
             ListView.builder(
                 itemCount: 15,
                 itemBuilder: (BuildContext context, int index) {
                   return ListTile(
                     title: Text("Shahriar Shanto"),
+                    subtitle: Text("21m ago"),
+                    leading: Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        border: Border.all(width: 2, color: Colors.green),
+                        shape: BoxShape.circle,
+                      ),
+                      child: CircleAvatar(child: Icon(Icons.person_4, size: 30,),)
+                    ),
+                  );
+                }
+            ),
+            ListView.builder(
+                itemCount: 15,
+                itemBuilder: (BuildContext context, int index) {
+                  return ListTile(
+                    title: Text("Shahriar Shanto"),
+                    subtitle: Text("03:47 am"),
                     leading: CircleAvatar(child: Icon(Icons.person_4, size: 30,),),
-                    trailing: Text("03:47 am"),
+                    trailing: Icon(Icons.phone),
                   );
                 }
             ),
