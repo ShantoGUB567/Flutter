@@ -13,6 +13,7 @@ import 'package:new_app_6/listview.dart';
 import 'package:new_app_6/listviewbuilder.dart';
 import 'package:new_app_6/listviewcustom.dart';
 import 'package:new_app_6/listviewseparated.dart';
+import 'package:new_app_6/pub_dev.dart';
 import 'package:new_app_6/singlescrollview.dart';
 import 'package:new_app_6/spacer.dart';
 import 'package:new_app_6/stack.dart';
@@ -29,7 +30,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: HomeActivity());
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeActivity()
+    );
   }
 }
 
@@ -145,9 +149,9 @@ class HomeActivity extends StatelessWidget {
                   child: Text("ButtonBar")
               ),ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => PubDev()));
                   },
-                  child: Text("ClipOval")
+                  child: Text("PubDev Use")
               ),ElevatedButton(
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => IndexedStackAct()));
